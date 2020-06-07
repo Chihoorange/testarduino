@@ -119,7 +119,7 @@ function draw() {
       setTimeout(() => {
         recentlyTalked = false;
         latestData = 0;
-      }, 2000);
+      }, 4000);
     }
   }
 
@@ -130,7 +130,7 @@ function draw() {
       setTimeout(() => {
         recentlyTalked = false;
         latestData = 0;
-      }, 2000);
+      }, 4000);
     }
   }
 
