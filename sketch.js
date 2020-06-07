@@ -121,9 +121,9 @@ function draw() {
         latestData = 0;
       }, 4000);
     }
-  } else {
+  } else if (latestData.includes("degrees")) {
     if (recentlyTalked == false) {
-      responsiveVoice.speak("It's " + latestData + " degrees celcius.");
+      responsiveVoice.speak("It's " + latestData);
       recentlyTalked = true;
       setTimeout(() => {
         recentlyTalked = false;
