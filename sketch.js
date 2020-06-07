@@ -112,12 +112,26 @@ function draw() {
   fill(0,0,0);
   text(latestData, 10, 10);
 
-  if (recentlyTalked == false) {
-    responsiveVoice.speak("Hello Chiho!");
-    recentlyTalked = true;
-    setTimeOut(() => {
-      recentlyTalked = false;
-    }, 2000);
+  if(latestData == 1) {
+    if (recentlyTalked == false) {
+      responsiveVoice.speak("Hello Olivier!");
+      recentlyTalked = true;
+      latestData = null;
+      setTimeout(() => {
+        recentlyTalked = false;
+      }, 2000);
+    }
+  }
+
+  if(latestData == 2) {
+    if (recentlyTalked == false) {
+      responsiveVoice.speak("Hello Chiho!");
+      recentlyTalked = true;
+      latestData = null;
+      setTimeout(() => {
+        recentlyTalked = false;
+      }, 2000);
+    }
   }
 
   // Polling method
