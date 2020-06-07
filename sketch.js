@@ -106,18 +106,18 @@ function gotRawData(thedata) {
 // serial.available() returns the number of bytes available in the buffer
 // serial.write(somevar) writes out the value of somevar to the serial device
 
-var lastData = null;
+var recentlyTalked = false;
 function draw() {
   background(255,255,255);
   fill(0,0,0);
   text(latestData, 10, 10);
 
-  if (lastData != latestData) {
-    if (latestData == 2) {
-      responsiveVoice.speak("Hello Chiho!");
-    }
-
-    lastData = latestData;
+  if (recentlyTalked == false) {
+    responsiveVoice.speak("Hello Chiho!");
+    recentlyTalked = true;
+    setTimeOut(() => {
+      recentlyTalked = false;
+    }, 2000);
   }
 
   // Polling method
