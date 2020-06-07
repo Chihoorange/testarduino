@@ -118,7 +118,7 @@ function draw() {
       recentlyTalked = true;
       setTimeout(() => {
         recentlyTalked = false;
-        latestData = 0;
+        latestData = "";
       }, 4000);
     }
   } else if (latestData.includes("degrees")) {
@@ -127,7 +127,7 @@ function draw() {
       recentlyTalked = true;
       setTimeout(() => {
         recentlyTalked = false;
-        latestData = 0;
+        latestData = "";
       }, 4000);
     }
   }
