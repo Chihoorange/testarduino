@@ -113,25 +113,25 @@ function draw() {
   text(latestData, 10, 10);
 
   if(latestData == 1) {
-    if (recentlyTalked == false) {
-      responsiveVoice.speak("Hello Olivier!");
-      recentlyTalked = true;
-      setTimeout(() => {
-        recentlyTalked = false;
-        latestData = 0;
-      }, 2000);
-    }
+    // if (recentlyTalked == false) {
+    //   responsiveVoice.speak("Hello Olivier!");
+    //   recentlyTalked = true;
+    //   setTimeout(() => {
+    //     recentlyTalked = false;
+    //     latestData = 0;
+    //   }, 2000);
+    // }
   }
 
   if(latestData == 2) {
-    if (recentlyTalked == false) {
-      responsiveVoice.speak("Hello Chiho!");
-      recentlyTalked = true;
-      setTimeout(() => {
-        recentlyTalked = false;
-        latestData = 0;
-      }, 2000);
-    }
+    // if (recentlyTalked == false) {
+    //   responsiveVoice.speak("Hello Chiho!");
+    //   recentlyTalked = true;
+    //   setTimeout(() => {
+    //     recentlyTalked = false;
+    //     latestData = 0;
+    //   }, 2000);
+    // }
   }
 
   // Polling method
