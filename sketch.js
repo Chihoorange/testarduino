@@ -1,7 +1,9 @@
 // Declare a "SerialPort" object
 let serial;
 let latestData = "waiting for data";  // you'll use this to write incoming data to the canvas
-document.getElementById("myP").style.fontSize = "xx-large";
+function myFunction() {
+  document.getElementById("myP").style.fontSize = "xx-large";
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
