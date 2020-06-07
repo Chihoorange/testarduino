@@ -113,7 +113,7 @@ function draw() {
   text(latestData, 10, 10);
 
   if(latestData == 1) {
-    if (recentlyTalked == false) {
+    //if (recentlyTalked == false) {
     //   responsiveVoice.speak("You touched a sensor");
     //   recentlyTalked = true;
     //   setTimeout(() => {
@@ -124,7 +124,7 @@ function draw() {
   }
 
   if(latestData == 2) {
-    if (recentlyTalked == false) {
+    //if (recentlyTalked == false) {
     //   responsiveVoice.speak("You pressed button");
     //   recentlyTalked = true;
     //   setTimeout(() => {
