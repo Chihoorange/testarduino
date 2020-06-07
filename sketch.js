@@ -116,9 +116,9 @@ function draw() {
     if (recentlyTalked == false) {
       responsiveVoice.speak("Hello Olivier!");
       recentlyTalked = true;
-      latestData = 0;
       setTimeout(() => {
         recentlyTalked = false;
+        latestData = 0;
       }, 2000);
     }
   }
@@ -127,9 +127,9 @@ function draw() {
     if (recentlyTalked == false) {
       responsiveVoice.speak("Hello Chiho!");
       recentlyTalked = true;
-      latestData = 0;
       setTimeout(() => {
         recentlyTalked = false;
+        latestData = 0;
       }, 2000);
     }
   }
