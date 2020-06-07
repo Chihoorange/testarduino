@@ -113,25 +113,25 @@ function draw() {
   text(latestData, 10, 10);
 
   if(latestData == 1) {
-    if (recentlyTalked == false) {
-      responsiveVoice.speak("The sun of the day.After a long period of rain, people rejoice the warmness and hopeful sunlight.The painter took this happiness scene and made it the abstract painting. ");
-      recentlyTalked = true;
-      setTimeout(() => {
-        recentlyTalked = false;
-        latestData = 0;
-      }, 4000);
-    }
+    // if (recentlyTalked == false) {
+    //   responsiveVoice.speak("The sun of the day.After a long period of rain, people rejoice the warmness and hopeful sunlight.The painter took this happiness scene and made it the abstract painting. ");
+    //   recentlyTalked = true;
+    //   setTimeout(() => {
+    //     recentlyTalked = false;
+    //     latestData = 0;
+    //   }, 4000);
+    // }
   }
 
   if(latestData == 2) {
-    if (recentlyTalked == false) {
-      responsiveVoice.speak("You pressed button");
-      recentlyTalked = true;
-      setTimeout(() => {
-        recentlyTalked = false;
-        latestData = 0;
-      }, 4000);
-    }
+    // if (recentlyTalked == false) {
+    //   responsiveVoice.speak("You pressed button");
+    //   recentlyTalked = true;
+    //   setTimeout(() => {
+    //     recentlyTalked = false;
+    //     latestData = 0;
+    //   }, 4000);
+    // }
   }
 
   // Polling method
